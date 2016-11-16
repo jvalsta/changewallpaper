@@ -3,7 +3,7 @@ class changewallpaper {
                 source => "/etc/puppet/modules/changewallpaper/ESO_NASA_3440x1440.jpg",
         }
 
-	file { "/home/master/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-desktop.xml":
+	file { "/etc/skel/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-desktop.xml":
 		content => template("changewallpaper/xfce4-desktop.xml"),
 	}
 }
