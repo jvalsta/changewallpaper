@@ -10,7 +10,7 @@ class changewallpaper {
 
 	file { "/etc/skel/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-desktop.xml":
 		content => template("changewallpaper/xfce4-desktop.xml"),
-		require => File["/etc/skel/.config/xfce4/xfconf/xfce-perchannel-xml/,
+		require => File["/etc/skel/.config/xfce4/xfconf/xfce-perchannel-xml/"],
 	}
 }
 
