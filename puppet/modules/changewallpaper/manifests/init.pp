@@ -1,6 +1,6 @@
 class changewallpaper {
 
-	file {"/etc/skel/.config/xfce4/xfconf/xfce-perchannel-xml/":
+	file {["/etc/skel/.config/","/etc/skel/.config/xfce4/","/etc/skel/.config/xfce4/xfconf/","/etc/skel/.config/xfce4/xfconf/xfce-perchannel-xml/"]:
 		ensure => directory,
 	}
 
